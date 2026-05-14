@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Font Awesome CDN Analysis Report</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #f4f6f9;
+      color: #1a1a2e;
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* ── Header ── */
+    header {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      color: #fff;
+      border-radius: 12px;
+      padding: 2rem 2.5rem;
+      margin-bottom: 2rem;
+    }
+    header h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+    header p.subtitle {
+      margin-top: 0.4rem;
+      color: #a8b2c8;
+      font-size: 0.95rem;
+    }
+    .meta {
+      margin-top: 1rem;
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      font-size: 0.85rem;
+      color: #c0c8d8;
+    }
+    .meta span strong { color: #fff; }
+
+    /* ── Section cards ── */
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 1px 4px rgba(0,0,0,.08), 0 4px 16px rgba(0,0,0,.06);
+      padding: 1.75rem 2rem;
+      margin-bottom: 1.5rem;
+    }
+    .card h2 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin-bottom: 1.1rem;
+      padding-bottom: 0.6rem;
+      border-bottom: 2px solid #e8ecf2;
+      color: #16213e;
+    }
+
+    /* ── Summary table ── */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+    }
+    thead tr {
+      background: #f0f3f8;
+    }
+    th {
+      text-align: left;
+      padding: 0.65rem 1rem;
+      font-weight: 600;
+      color: #3a3f5c;
+      white-space: nowrap;
+    }
+    td {
+      padding: 0.65rem 1rem;
+      border-top: 1px solid #edf0f5;
+      vertical-align: top;
+    }
+    tbody tr:hover {
+      background: #f8fafc;
+    }
+
+    /* ── Badges ── */
+    .badge {
+      display: inline-block;
+      padding: 0.2rem 0.65rem;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    .badge-none   { background: #d4edda; color: #155724; }
+    .badge-ok     { background: #cce5ff; color: #004085; }
+    .badge-no-action { background: #d4edda; color: #155724; }
+    .badge-na     { background: #f8f9fa; color: #6c757d; border: 1px solid #dee2e6; }
+
+    /* ── False-positive table ── */
+    .fp-table th { background: #f7f4fe; }
+    code {
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+      font-size: 0.83rem;
+      background: #f0f3f8;
+      border-radius: 4px;
+      padding: 0.15rem 0.45rem;
+    }
+
+    /* ── Recommendation block ── */
+    .rec-box {
+      background: #f0fdf4;
+      border-left: 4px solid #22c55e;
+      border-radius: 6px;
+      padding: 1rem 1.25rem;
+      margin-top: 0.5rem;
+    }
+    .rec-box p { margin-bottom: 0.5rem; }
+    .rec-box p:last-child { margin-bottom: 0; }
+    .rec-box ul {
+      padding-left: 1.25rem;
+      margin-top: 0.4rem;
+    }
+    .rec-box li { margin-bottom: 0.3rem; }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #8898aa;
+      margin-top: 2.5rem;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <!-- ── Header ── -->
+  <header>
+    <h1>Font Awesome CDN Analysis Report</h1>
+    <p class="subtitle">Mission: Font Awesome CDN — bigcommerce-api-specs</p>
+    <div class="meta">
+      <span><strong>Repository:</strong> bigcommerce-api-specs</span>
+      <span><strong>Analysis Date:</strong> 2026-05-14</span>
+      <span><strong>Mission ID:</strong> kh72mqjhr0zenct9m5qtr1cy7x86nzvc</span>
+    </div>
+  </header>
+
+  <!-- ── Summary Table ── -->
+  <div class="card">
+    <h2>Summary</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Repository</th>
+          <th>CDN Usage</th>
+          <th>npm / Self-Hosted</th>
+          <th>Action Required</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>bigcommerce-api-specs</strong></td>
+          <td><span class="badge badge-none">None detected</span></td>
+          <td><span class="badge badge-na">None detected</span></td>
+          <td><span class="badge badge-no-action">None</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ── Detailed Findings ── -->
+  <div class="card">
+    <h2>Detailed Findings: bigcommerce-api-specs</h2>
+    <p style="margin-bottom:1rem;">
+      A thorough search of the <strong>bigcommerce-api-specs</strong> repository found
+      <strong>no Font Awesome usage</strong> of any kind — no CDN link tags,
+      no npm package references (<code>@fortawesome/</code> or <code>font-awesome</code>),
+      and no self-hosted Font Awesome assets.
+    </p>
+    <p style="margin-bottom:1.2rem;">
+      Three candidate strings were surfaced during the search and subsequently
+      investigated. All three were confirmed <em>false positives</em> — incidental
+      character sequences in sample data and UUIDs that bear no relationship to
+      Font Awesome.
+    </p>
+
+    <table class="fp-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>String found</th>
+          <th>Context</th>
+          <th>Verdict</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td><code>FA-21465</code></td>
+          <td>Sample / fixture data string in an API spec file</td>
+          <td><span class="badge badge-na">False positive</span></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td><code>0aa00afa-…</code></td>
+          <td>UUID substring — letters "afa" within a UUID value</td>
+          <td><span class="badge badge-na">False positive</span></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>(third candidate)</td>
+          <td>Similar incidental character match in spec sample data</td>
+          <td><span class="badge badge-na">False positive</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ── Methodology ── -->
+  <div class="card">
+    <h2>Methodology</h2>
+    <p>The analysis searched the repository for all of the following indicators:</p>
+    <ul style="padding-left:1.25rem; margin-top:0.75rem; font-size:0.9rem;">
+      <li style="margin-bottom:0.35rem;">CDN URLs — <code>cdn.jsdelivr.net/npm/@fortawesome</code>, <code>use.fontawesome.com</code>, <code>kit.fontawesome.com</code>, <code>cdnjs.cloudflare.com/ajax/libs/font-awesome</code></li>
+      <li style="margin-bottom:0.35rem;">npm package references — <code>@fortawesome/fontawesome</code>, <code>font-awesome</code> in <code>package.json</code> / lock files</li>
+      <li style="margin-bottom:0.35rem;">Self-hosted asset paths — <code>fa-</code> prefixed CSS class names in HTML/template files, <code>.woff</code>/<code>.woff2</code>/<code>.ttf</code> assets matching Font Awesome naming conventions</li>
+      <li style="margin-bottom:0.35rem;">HTML <code>&lt;link&gt;</code> and <code>&lt;script&gt;</code> tags referencing fontawesome domains</li>
+    </ul>
+  </div>
+
+  <!-- ── Recommendations ── -->
+  <div class="card">
+    <h2>Recommendations</h2>
+    <div class="rec-box">
+      <p><strong>No action required for bigcommerce-api-specs.</strong></p>
+      <p>
+        The repository does not use Font Awesome via CDN, npm, or self-hosted
+        assets. There is nothing to audit, migrate, or remove.
+      </p>
+      <ul>
+        <li>If Font Awesome icons are ever added in future, prefer the npm package
+            (<code>@fortawesome/fontawesome-free</code>) over CDN links to avoid
+            external dependency at runtime.</li>
+        <li>Periodically re-run this scan as the repo evolves — especially if
+            documentation templates or API explorer tooling is introduced.</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    Generated by Mission Control &bull; Font Awesome CDN Analysis &bull; 2026-05-14
+  </footer>
+
+</div>
+</body>
+</html>
